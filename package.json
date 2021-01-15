@@ -1,0 +1,29 @@
+{
+  "name": "shortly-landing-page",
+  "version": "1.0.0",
+  "description": "Shortly landing page that shortens url using the shrtcode API",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./src/styles.css -o ./public/dist/styles.css",
+    "watch": "watch 'npm run build' ./public --ignoreDirectoryPattern=/dist/",
+    "prod": "NODE_ENV=production postcss ./src/styles.css -o ./public/dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oloruntomiojo/shortly-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oloruntomiojo/shortly-landing-page/issues"
+  },
+  "homepage": "https://github.com/oloruntomiojo/shortly-landing-page#readme"
+}
