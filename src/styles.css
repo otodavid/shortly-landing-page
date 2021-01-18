@@ -23,23 +23,36 @@ h6 {
     @apply font-bold text-neutral-darkViolet;
 }
 
+#header-nav li {
+    @apply p-3;
+}
+
 p {
     font-size: .9rem;
     @apply font-medium text-neutral-grayishViolet;
 }
 
 .btn {
-    @apply block w-2/4 mx-auto bg-primary-cyan p-3 rounded-full text-white mt-4;
+    @apply block w-2/4 mx-auto bg-primary-cyan p-2.5 rounded-full text-white mt-4;
 }
 
 .features-card {
-    @apply bg-white relative rounded-md text-center w-full p-6 pt-16 px-9 mb-20;
+    @apply bg-white relative rounded-md text-center w-full p-6 pt-18 px-9 mb-20;
+
 }
 
 .feature-image {
     margin-left: calc(68px/-2);
 
     @apply absolute -top-8 left-2/4 bg-primary-violet p-5 rounded-full flex justify-center items-center;
+}
+
+.feature-heading {
+    @apply text-xl mb-3;
+}
+
+.fab {
+    @apply hover:text-primary-cyan cursor-pointer;
 }
 
 .attribution-link {

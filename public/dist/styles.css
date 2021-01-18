@@ -568,6 +568,10 @@ h1, h2, h3, h4, h5, h6{
   color: rgba(35, 33, 39, var(--tw-text-opacity));
 }
 
+#header-nav li {
+  padding: 0.75rem;
+}
+
 p {
   font-size: .9rem;
   font-weight: 500;
@@ -583,7 +587,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  padding: 0.75rem;
+  padding: 0.625rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
   width: 50%;
@@ -597,7 +601,7 @@ p {
   padding: 1.5rem;
   padding-left: 2.25rem;
   padding-right: 2.25rem;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   position: relative;
   text-align: center;
   width: 100%;
@@ -615,6 +619,21 @@ p {
   position: absolute;
   top: -2rem;
   left: 50%;
+}
+
+.feature-heading {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.fab {
+  cursor: pointer;
+}
+
+.fab:hover{
+  --tw-text-opacity: 1;
+  color: rgba(42, 207, 207, var(--tw-text-opacity));
 }
 
 .attribution-link {
@@ -32530,6 +32549,12 @@ p {
 
 .transition-transform{
   transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-left{
+  transition-property: left;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -64598,6 +64623,12 @@ p {
     transition-duration: 150ms;
   }
 
+  .sm\:transition-left{
+    transition-property: left;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .sm\:ease-linear{
     transition-timing-function: linear;
   }
@@ -96593,6 +96624,12 @@ p {
 
   .md\:transition-transform{
     transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .md\:transition-left{
+    transition-property: left;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
@@ -128596,6 +128633,12 @@ p {
     transition-duration: 150ms;
   }
 
+  .lg\:transition-left{
+    transition-property: left;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .lg\:ease-linear{
     transition-timing-function: linear;
   }
@@ -160595,6 +160638,12 @@ p {
     transition-duration: 150ms;
   }
 
+  .xl\:transition-left{
+    transition-property: left;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
   .xl\:ease-linear{
     transition-timing-function: linear;
   }
@@ -192590,6 +192639,12 @@ p {
 
   .\32xl\:transition-transform{
     transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .\32xl\:transition-left{
+    transition-property: left;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
