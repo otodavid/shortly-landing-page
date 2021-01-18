@@ -1,8 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --color-cyan: rgb(42, 207, 207);
+    --color-violet: rgb(59, 48, 84);
+    --color-red: rgb(244, 98, 98);
+    --color-gray: rgb(191, 191, 191);
+    --color-grayish-violet: rgb(158, 154, 167);
+    --color-blue: rgb(53, 50, 62);
+    --color-dark-violet: rgb(35, 33, 39);
+}
 
 @tailwind base;
 @taliwind components;
 
 /* CUSTOM CSS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-bold text-neutral-darkViolet;
+}
+
+p {
+    font-size: .9rem;
+    @apply font-medium text-neutral-grayishViolet;
+}
+
+.btn {
+    @apply block w-2/4 mx-auto bg-primary-cyan p-3 rounded-full text-white mt-4;
+}
+
+.features-card {
+    @apply bg-white relative rounded-md text-center w-full p-6 pt-16 px-9 mb-20;
+}
+
+.feature-image {
+    margin-left: calc(68px/-2);
+
+    @apply absolute -top-8 left-2/4 bg-primary-violet p-5 rounded-full flex justify-center items-center;
+}
+
+.attribution-link {
+    @apply text-blue-600 hover:text-blue-800 hover:underline font-bold;
+}
 
 @tailwind utilities;

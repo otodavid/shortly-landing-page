@@ -20,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         body: ['Poppins']
+      },
+      spacing : {
+        18: '4.5rem'
       }
     },
   },
