@@ -558,6 +558,10 @@ video {
   height: auto;
 }
 
+html {
+  font-size: 18px;
+}
+
 @taliwind components;
 
 /* CUSTOM CSS */
@@ -566,6 +570,11 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgba(35, 33, 39, var(--tw-text-opacity));
+}
+
+a {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 #header-nav li {
@@ -584,13 +593,15 @@ p {
   background-color: rgba(42, 207, 207, var(--tw-bg-opacity));
   border-radius: 9999px;
   display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.625rem;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-  width: 50%;
+  width: 60%;
 }
 
 .features-card {
@@ -599,8 +610,6 @@ p {
   border-radius: 0.375rem;
   margin-bottom: 5rem;
   padding: 1.5rem;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
   padding-top: 4.5rem;
   position: relative;
   text-align: center;
@@ -627,6 +636,10 @@ p {
   margin-bottom: 0.75rem;
 }
 
+#footer-nav li {
+  padding: 0.25rem;
+}
+
 .fab {
   cursor: pointer;
 }
@@ -638,6 +651,8 @@ p {
 
 .attribution-link {
   font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(37, 99, 235, var(--tw-text-opacity));
 }
@@ -28609,6 +28624,10 @@ p {
   z-index: auto;
 }
 
+.-z-1{
+  z-index: -1;
+}
+
 .focus-within\:z-0:focus-within{
   z-index: 0;
 }
@@ -28637,6 +28656,10 @@ p {
   z-index: auto;
 }
 
+.focus-within\:-z-1:focus-within{
+  z-index: -1;
+}
+
 .focus\:z-0:focus{
   z-index: 0;
 }
@@ -28663,6 +28686,10 @@ p {
 
 .focus\:z-auto:focus{
   z-index: auto;
+}
+
+.focus\:-z-1:focus{
+  z-index: -1;
 }
 
 .gap-0{
@@ -60679,6 +60706,10 @@ p {
     z-index: auto;
   }
 
+  .sm\:-z-1{
+    z-index: -1;
+  }
+
   .sm\:focus-within\:z-0:focus-within{
     z-index: 0;
   }
@@ -60707,6 +60738,10 @@ p {
     z-index: auto;
   }
 
+  .sm\:focus-within\:-z-1:focus-within{
+    z-index: -1;
+  }
+
   .sm\:focus\:z-0:focus{
     z-index: 0;
   }
@@ -60733,6 +60768,10 @@ p {
 
   .sm\:focus\:z-auto:focus{
     z-index: auto;
+  }
+
+  .sm\:focus\:-z-1:focus{
+    z-index: -1;
   }
 
   .sm\:gap-0{
@@ -92684,6 +92723,10 @@ p {
     z-index: auto;
   }
 
+  .md\:-z-1{
+    z-index: -1;
+  }
+
   .md\:focus-within\:z-0:focus-within{
     z-index: 0;
   }
@@ -92712,6 +92755,10 @@ p {
     z-index: auto;
   }
 
+  .md\:focus-within\:-z-1:focus-within{
+    z-index: -1;
+  }
+
   .md\:focus\:z-0:focus{
     z-index: 0;
   }
@@ -92738,6 +92785,10 @@ p {
 
   .md\:focus\:z-auto:focus{
     z-index: auto;
+  }
+
+  .md\:focus\:-z-1:focus{
+    z-index: -1;
   }
 
   .md\:gap-0{
@@ -124689,6 +124740,10 @@ p {
     z-index: auto;
   }
 
+  .lg\:-z-1{
+    z-index: -1;
+  }
+
   .lg\:focus-within\:z-0:focus-within{
     z-index: 0;
   }
@@ -124717,6 +124772,10 @@ p {
     z-index: auto;
   }
 
+  .lg\:focus-within\:-z-1:focus-within{
+    z-index: -1;
+  }
+
   .lg\:focus\:z-0:focus{
     z-index: 0;
   }
@@ -124743,6 +124802,10 @@ p {
 
   .lg\:focus\:z-auto:focus{
     z-index: auto;
+  }
+
+  .lg\:focus\:-z-1:focus{
+    z-index: -1;
   }
 
   .lg\:gap-0{
@@ -156694,6 +156757,10 @@ p {
     z-index: auto;
   }
 
+  .xl\:-z-1{
+    z-index: -1;
+  }
+
   .xl\:focus-within\:z-0:focus-within{
     z-index: 0;
   }
@@ -156722,6 +156789,10 @@ p {
     z-index: auto;
   }
 
+  .xl\:focus-within\:-z-1:focus-within{
+    z-index: -1;
+  }
+
   .xl\:focus\:z-0:focus{
     z-index: 0;
   }
@@ -156748,6 +156819,10 @@ p {
 
   .xl\:focus\:z-auto:focus{
     z-index: auto;
+  }
+
+  .xl\:focus\:-z-1:focus{
+    z-index: -1;
   }
 
   .xl\:gap-0{
@@ -188699,6 +188774,10 @@ p {
     z-index: auto;
   }
 
+  .\32xl\:-z-1{
+    z-index: -1;
+  }
+
   .\32xl\:focus-within\:z-0:focus-within{
     z-index: 0;
   }
@@ -188727,6 +188806,10 @@ p {
     z-index: auto;
   }
 
+  .\32xl\:focus-within\:-z-1:focus-within{
+    z-index: -1;
+  }
+
   .\32xl\:focus\:z-0:focus{
     z-index: 0;
   }
@@ -188753,6 +188836,10 @@ p {
 
   .\32xl\:focus\:z-auto:focus{
     z-index: auto;
+  }
+
+  .\32xl\:focus\:-z-1:focus{
+    z-index: -1;
   }
 
   .\32xl\:gap-0{

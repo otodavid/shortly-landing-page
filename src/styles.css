@@ -14,6 +14,12 @@
 @taliwind components;
 
 /* CUSTOM CSS */
+@layer base {
+    html {
+        font-size: 18px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +27,10 @@ h4,
 h5,
 h6 {
     @apply font-bold text-neutral-darkViolet;
+}
+
+a {
+    @apply text-base;
 }
 
 #header-nav li {
@@ -33,11 +43,11 @@ p {
 }
 
 .btn {
-    @apply block w-2/4 mx-auto bg-primary-cyan p-2.5 rounded-full text-white mt-4;
+    @apply block w-3/5 mx-auto bg-primary-cyan p-2.5 rounded-full text-white mt-2 text-base;
 }
 
 .features-card {
-    @apply bg-white relative rounded-md text-center w-full p-6 pt-18 px-9 mb-20;
+    @apply bg-white relative rounded-md text-center w-full p-6 pt-18 mb-20;
 
 }
 
@@ -51,12 +61,16 @@ p {
     @apply text-xl mb-3;
 }
 
+#footer-nav li {
+    @apply p-1;
+}
+
 .fab {
     @apply hover:text-primary-cyan cursor-pointer;
 }
 
 .attribution-link {
-    @apply text-blue-600 hover:text-blue-800 hover:underline font-bold;
+    @apply text-blue-600 hover:text-blue-800 hover:underline font-bold text-sm;
 }
 
 @tailwind utilities;
