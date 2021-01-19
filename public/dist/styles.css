@@ -588,6 +588,13 @@ p {
   color: rgba(158, 154, 167, var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px){
+  p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .btn {
   --tw-bg-opacity: 1;
   background-color: rgba(42, 207, 207, var(--tw-bg-opacity));
@@ -640,6 +647,11 @@ p {
   padding: 0.25rem;
 }
 
+#footer-nav a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .fab {
   cursor: pointer;
 }
@@ -651,8 +663,8 @@ p {
 
 .attribution-link {
   font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgba(37, 99, 235, var(--tw-text-opacity));
 }

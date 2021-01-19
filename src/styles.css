@@ -39,7 +39,7 @@ a {
 
 p {
     font-size: .9rem;
-    @apply font-medium text-neutral-grayishViolet;
+    @apply font-medium text-neutral-grayishViolet lg:text-base;
 }
 
 .btn {
@@ -65,12 +65,16 @@ p {
     @apply p-1;
 }
 
+#footer-nav a {
+    @apply text-sm;
+}
+
 .fab {
     @apply hover:text-primary-cyan cursor-pointer;
 }
 
 .attribution-link {
-    @apply text-blue-600 hover:text-blue-800 hover:underline font-bold text-sm;
+    @apply text-blue-600 hover:text-blue-800 hover:underline font-bold text-xs;
 }
 
 @tailwind utilities;
