@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+/* in case of darkmode */
 :root {
     --color-cyan: rgb(42, 207, 207);
     --color-violet: rgb(59, 48, 84);
@@ -8,6 +9,7 @@
     --color-grayish-violet: rgb(158, 154, 167);
     --color-blue: rgb(53, 50, 62);
     --color-dark-violet: rgb(35, 33, 39);
+    --color-light-cyan: rgb(157, 218, 218);
 }
 
 @tailwind base;
@@ -17,6 +19,7 @@
 @layer base {
     html {
         font-size: 18px;
+        line-height: 1.5;
     }
 }
 
@@ -30,35 +33,57 @@ h6 {
 }
 
 a {
-    @apply text-base;
+    @apply text-base lg:text-sm;
 }
 
 #header-nav li {
     @apply p-3;
 }
 
+#header-nav a {
+    @apply text-neutral-gray hover:text-neutral-darkViolet;
+}
+
 p {
     font-size: .9rem;
-    @apply font-medium text-neutral-grayishViolet lg:text-base;
+    @apply font-medium text-neutral-grayishViolet lg:text-sm xl:text-base;
+}
+
+button {
+    @apply text-base lg:text-sm;
 }
 
 .btn {
-    @apply block w-3/5 mx-auto bg-primary-cyan p-2.5 rounded-full text-white mt-2 text-base;
+    @apply block w-3/5 mx-auto bg-primary-cyan p-2.5 rounded-full text-white mt-2 text-base text-center hover:bg-neutral-lightCyan lg:text-sm;
+}
+
+#form-control {
+    background: var(--color-violet) url('../images/bg-shorten-mobile.svg') top -3.5rem right -5rem / cover no-repeat; 
+    margin-left: calc(83.3333%/-2);
+
+    @apply absolute w-10/12 left-2/4 -top-14 p-5 rounded-lg lg:flex lg:justify-between lg:items-center lg:p-7 lg:px-8 xl:w-3/4 xl:p-10 xl:px-14 xl:-top-16;
 }
 
 .features-card {
-    @apply bg-white relative rounded-md text-center w-full p-6 pt-18 mb-20;
+    @apply bg-white relative rounded-md text-center w-full p-6 pt-18 mb-20 lg:w-31% lg:text-left lg:pb-8;
+}
 
+.features-card p {
+    @apply xl:text-sm;
 }
 
 .feature-image {
     margin-left: calc(68px/-2);
 
-    @apply absolute -top-8 left-2/4 bg-primary-violet p-5 rounded-full flex justify-center items-center;
+    @apply absolute -top-8 left-2/4 bg-primary-violet p-5 rounded-full flex justify-center items-center lg:left-16;
 }
 
 .feature-heading {
     @apply text-xl mb-3;
+}
+
+#boost-links {
+    background: var(--color-violet) url('../images/bg-boost-mobile.svg') center / cover no-repeat;
 }
 
 #footer-nav li {
@@ -66,7 +91,7 @@ p {
 }
 
 #footer-nav a {
-    @apply text-sm;
+    @apply text-sm hover:text-primary-cyan;
 }
 
 .fab {
@@ -75,6 +100,27 @@ p {
 
 .attribution-link {
     @apply text-blue-600 hover:text-blue-800 hover:underline font-bold text-xs;
+}
+
+@media (min-width: 1024px) {
+    #hero-image img {
+        width: 130%;
+    }
+
+    #form-control {
+        background: var(--color-violet) url('../images/bg-shorten-desktop.svg') top right / cover no-repeat; ;
+        margin-left: calc(83.333%/-2);
+    }
+
+    #boost-links {
+        background: var(--color-violet) url('../images/bg-boost-desktop.svg') top left / cover no-repeat;
+    }
+}
+
+@media (min-width: 1280px) {
+    #form-control {
+        margin-left: calc(75%/-2);
+    }
 }
 
 @tailwind utilities;

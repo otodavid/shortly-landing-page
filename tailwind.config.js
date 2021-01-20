@@ -15,20 +15,25 @@ module.exports = {
           gray: 'rgb(191, 191, 191)',
           grayishViolet: 'rgb(158, 154, 167)',
           blue: 'rgb(53, 50, 62)',
-          darkViolet: 'rgb(35, 33, 39)'
+          darkViolet: 'rgb(35, 33, 39)',
+          lightCyan: 'rgb(157, 218, 218)'
         }
       },
       fontFamily: {
         body: ['Poppins']
       },
       spacing : {
-        18: '4.5rem'
+        18: '4.5rem',
+        '31%': '31.5%'
       },
       zIndex: {
         "-1": '-1'
       },
       transitionProperty: {
         left: 'left'
+      },
+      fontSize: {
+        '5.5xl': ['3.5rem', { lineHeight: '1' }],
       }
     },
   },
