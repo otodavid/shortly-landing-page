@@ -50,7 +50,8 @@
       <!-- hero section -->
       <section class="flex flex-col mb-10 lg:flex-row lg:pl-14 max-w-5xl mx-auto lg:pt-4 xl:pl-7">
         <div class="order-2 p-10 py-4 pt-8 text-center lg:text-left lg:p-0 lg:py-8 lg:flex-none lg:w-1/2 xl:pt-12">
-          <h2 class="text-3xl font-semibold text-neutral-darkViolet lg:text-5xl xl:text-5.5xl">More than just shorter links</h2>
+          <h2 class="text-3xl font-semibold text-neutral-darkViolet lg:text-5xl xl:text-5.5xl">More than just shorter
+            links</h2>
           <p class="py-4 mx-auto lg:w-10/12 lg:m-0 lg:pt-3 lg:pb-8 xl:w-4/5">
             Build your brand’s recognition and get detailed insights
             on how your links are performing.
@@ -63,18 +64,27 @@
       </section>
 
       <!-- shorten url and features section -->
-      <section class="bg-gray-200 relative pt-32 mt-32 xl:mt-28">
+      <section class="bg-gray-200 relative pt-24 mt-32 xl:mt-28">
         <!-- shorten url section -->
-        <div id="form-control"
-          class="">
-          <input type="text" id="shorten-link" class="w-full rounded-md p-2.5 px-4 text-sm lg:w-3/4 lg:p-3.5" placeholder="Shorten a link here...">
+        <div id="form-control">
+          <input type="text" id="shorten-link" class="w-full rounded-md p-2.5 px-4 text-sm lg:w-3/4 lg:p-3.5 border-white border-4"
+            placeholder="Shorten a link here...">
+          <small class="alert text-secondary text-xs hidden">Please add a link</small>
           <button type="submit"
-            class="w-full bg-primary-cyan rounded-md p-2 mt-4 text-white text-base hover:bg-neutral-lightCyan lg:w-1/5 lg:m-0 lg:p-3.5">Shorten
+            class="w-full bg-primary-cyan rounded-md p-2 mt-3 text-white text-base hover:bg-neutral-lightCyan lg:w-1/5 lg:m-0 lg:p-3.5">Shorten
             It!</button>
         </div>
 
+        <div id="short-links" class="flex flex-col px-6 py-4 pt-2 mb-5 max-h-98 overflow-y-scroll lg:px-14 max-w-5xl mx-auto xl:px-7">
+          <!-- links injected using the shrtcode API -->
+
+          <div class="order-last mb-5 hidden">
+            <button type="button" id="clear-links" class="btn bg-secondary rounded-md mt-0 lg:w-auto px-6">Clear Links</button>
+          </div>
+        </div>
+
         <!-- Features -->
-        <div class="p-4 lg:px-14 max-w-5xl bg-red500 mx-auto xl:px-7">
+        <div class="py-4 px-6 lg:px-14 max-w-5xl mx-auto xl:px-7">
           <!-- intro -->
           <div class="px-4 text-center max-w-lg mx-auto">
             <h3 class="text-2xl lg:text-3xl">Advanced Statistics</h3>
@@ -138,7 +148,8 @@
     </main>
 
     <footer class="bg-neutral-darkViolet">
-      <div class="flex flex-col justify-center items-center p-10  text-neutral-grayishViolet max-w-5xl mx-auto lg:flex-row lg:justify-between lg:items-start lg:px-14">
+      <div
+        class="flex flex-col justify-center items-center p-10  text-neutral-grayishViolet max-w-5xl mx-auto lg:flex-row lg:justify-between lg:items-start lg:px-14">
         <h1 class="py-4 lg:p-0 lg:w-1/4 xl:w-2/5">
           <a href="#" class="w-max">
             <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
@@ -209,7 +220,7 @@
   </div>
 
 
-  <script src="./dist/index.js"></script>
+  <script type="module" src="../src/index.js"></script>
 </body>
 
 </html>
