@@ -100,15 +100,6 @@ function clearLinksEventListener() {
     })
 }
 
-function scrollFunction() {
-    // add shadow to top of short links to div when scrolling
-    if (linksContainer.scrollTop > 10) {
-        linksContainer.style.boxShadow = "inset 0px 10px 15px rgba(0, 0, 0, 0.15)"
-    } else {
-        linksContainer.style.boxShadow = null;
-    }
-}
-
 urlInput.addEventListener('keypress', () => {
     ui.clearAlert('error');
 })
@@ -119,5 +110,3 @@ linksContainer.addEventListener('click', (e) => {
 
 // add event listener to clear links when the button is shown if there are links in the local storage. If there are no links, the button is not shown and the event is not added 
 clearLinksEventListener();
-
-linksContainer.addEventListener('scroll', scrollFunction);

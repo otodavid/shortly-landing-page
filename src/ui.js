@@ -9,15 +9,15 @@ class UI {
         let output = '';
 
         output = `
-        <div id="link-content" class="bg-white rounded-md mb-6 lg:flex lg:justify-between lg:items-center lg:flex-wrap lg:px-6 lg:py-3">
-          <div class="border-b border-neutral-gray px-4 py-2 lg:border-0 lg:p-0 lg:w-3/5">
-            <p id="full-url" class="text-neutral-darkViolet truncate">${url.fullUrl}</p>
-          </div>
-          <div class="shortened-wrapper">
-            <p id="short-url" class="text-primary-cyan">${url.shortUrl}</p>
-            <button type="button" class="copy-link">Copy</button>
-          </div>
-        </div>`;
+        <div id="link-content" class="bg-white rounded-md mb-6 md:flex md:justify-between md:items-center md:flex-wrap md:px-4 md:py-2 lg:px-6 lg:py-3">
+        <div class="border-b border-neutral-gray px-4 py-2 md:border-0 md:p-0 lg:w-3/5">
+          <p id="full-url" class="text-neutral-darkViolet truncate">${url.fullUrl}</p>
+        </div>
+        <div class="shortened-wrapper">
+          <p id="short-url" class="text-primary-cyan">${url.shortUrl}</p>
+          <button type="button" class="copy-link">Copy</button>
+        </div>
+      </div>`;
 
         this.linksContainer.innerHTML += output;
 

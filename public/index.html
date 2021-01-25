@@ -14,9 +14,10 @@
   <link rel="stylesheet" href="dist/styles.css">
 </head>
 
-<body class="antialiased text-lg font-body">
+<body class="antialiased text-lg font-poppins">
   <div class="overflow-x-hidden max-w-7xl mx-auto">
-    <header class="flex justify-between items-center p-6 relative w-screen lg:px-14 max-w-5xl mx-auto xl:px-7">
+    <header
+      class="flex justify-between items-center p-6 relative w-screen max-w-md md:px-14 md:max-w-3xl mx-auto lg:max-w-5xl xl:px-7">
       <h1 class="lg:mr-8">
         <a href="#">
           <img src="./images/logo.svg" alt="logo">
@@ -31,7 +32,7 @@
       <nav id="header-nav"
         class="absolute top-20 left-0 w-full opacity-0 left-full transition-all ease-in-out duration-300 lg:static lg:opacity-100">
         <div
-          class="mx-auto w-11/12 bg-primary-violet rounded-lg p-6 text-center text-white lg:flex lg:bg-transparent lg:justify-between lg:items-center lg:text-neutral-darkViolet lg:p-0 lg:m-0 lg:w-full">
+          class="mx-auto w-11/12 bg-primary-violet rounded-lg p-6 text-center text-white md:w-4/6 lg:flex lg:bg-transparent lg:justify-between lg:items-center lg:text-neutral-darkViolet lg:p-0 lg:m-0 lg:w-full">
           <ul class="border-b border-gray-600 mb-6 pb-5 lg:flex lg:items-center lg:border-0 lg:pb-0 lg:mb-0">
             <li><a href="">Features</a></li>
             <li><a href="">Pricing</a></li>
@@ -48,17 +49,19 @@
 
     <main>
       <!-- hero section -->
-      <section class="flex flex-col mb-10 lg:flex-row lg:pl-14 max-w-5xl mx-auto lg:pt-4 xl:pl-7">
-        <div class="order-2 p-10 py-4 pt-8 text-center lg:text-left lg:p-0 lg:py-8 lg:flex-none lg:w-1/2 xl:pt-12">
+      <section
+        class="flex flex-col mb-10 max-w-md md:flex-row md:pl-14 md:max-w-3xl mx-auto lg:max-w-5xl lg:pt-4 xl:pl-7">
+        <div
+          class="order-2 p-10 py-4 pt-8 text-center md:text-left md:p-0 md:pr-4 md:py-8 md:w-3/5 lg:flex-none lg:w-1/2 lg:p-0 lg:pt-12">
           <h2 class="text-3xl font-semibold text-neutral-darkViolet lg:text-5xl xl:text-5.5xl">More than just shorter
             links</h2>
           <p class="py-4 mx-auto lg:w-10/12 lg:m-0 lg:pt-3 lg:pb-8 xl:w-4/5">
             Build your brand’s recognition and get detailed insights
             on how your links are performing.
           </p>
-          <a href="#" class="btn w-3/5 lg:w-40 lg:m-0">Get Started</a>
+          <a href="#" class="btn w-3/5 lg:w-40 md:m-0">Get Started</a>
         </div>
-        <div id="hero-image" class="w-full pl-10 lg:order-2 lg:w-2/4 lg:pl-0">
+        <div id="hero-image" class="w-full pl-10 md:order-2 md:w-2/4 md:pl-0">
           <img src="./images/illustration-working.svg" class="w-96 max-w-none lg:w-full" alt="illustration working">
         </div>
       </section>
@@ -66,25 +69,29 @@
       <!-- shorten url and features section -->
       <section class="bg-gray-200 relative pt-24 mt-32 xl:mt-28">
         <!-- shorten url section -->
-        <div id="form-control">
-          <input type="text" id="shorten-link" class="w-full rounded-md p-2.5 px-4 text-sm lg:w-3/4 lg:p-3.5 border-white border-4"
+        <div id="form-control"
+          class="absolute w-10/12 left-2/4 -top-14 p-5 rounded-lg lg:flex lg:justify-between lg:items-center lg:flex-wrap lg:p-7 lg:px-8 xl:p-10 xl:px-14 xl:-top-16">
+          <input type="text" id="shorten-link"
+            class="w-full rounded-md p-2.5 px-4 text-sm lg:w-3/4 lg:p-3.5 border-white border-4"
             placeholder="Shorten a link here...">
-          <small class="alert text-secondary text-xs hidden">Please add a link</small>
+          <small class="alert text-secondary text-xs hidden lg:w-98 lg:order-last mt-1 italic">Please add a link</small>
           <button type="submit"
             class="w-full bg-primary-cyan rounded-md p-2 mt-3 text-white text-base hover:bg-neutral-lightCyan lg:w-1/5 lg:m-0 lg:p-3.5">Shorten
             It!</button>
         </div>
 
-        <div id="links-container" class="flex flex-col px-6 py-4 pt-2 mt-4 mb-5 max-h-98 overflow-y-scroll lg:px-14 max-w-5xl mx-auto xl:px-7">
+        <div id="links-container"
+          class="flex flex-col px-6 py-4 pt-2 mt-4 mb-5 max-h-98 overflow-y-auto max-w-md md:max-w-3xl md:px-14 lg:max-h-60 lg:max-w-5xl mx-auto xl:px-7">
           <!-- links injected using the shrtcode API -->
 
           <div class="order-last mb-5 hidden">
-            <button type="button" id="clear-links" class="btn bg-secondary rounded-md mt-0 lg:w-auto px-6">Clear Links</button>
+            <button type="button" id="clear-links" class="btn bg-secondary rounded-md mt-0  px-6 w-44 lg:w-52 hover:bg-red-600">Clear
+              Links</button>
           </div>
         </div>
 
         <!-- Features -->
-        <div class="py-4 px-6 lg:px-14 max-w-5xl mx-auto xl:px-7">
+        <div class="py-4 px-6 max-w-md md:max-w-3xl lg:max-w-5xl md:px-14 mx-auto xl:px-7">
           <!-- intro -->
           <div class="px-4 text-center max-w-lg mx-auto">
             <h3 class="text-2xl lg:text-3xl">Advanced Statistics</h3>
@@ -95,9 +102,12 @@
           </div>
 
           <!-- Features Grid -->
-          <div class="py-2 mt-16 relative lg:flex lg:justify-between items-start">
+          <div
+            class="py-2 mt-16 relative md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-3 lg:flex lg:gap-0 lg:justify-between lg:items-start">
             <!-- connecting line -->
-            <div class="absolute top-0 left-2/4 w-2 h-4/5 -ml-0 bg-primary-cyan lg:h-2 lg:w-4/5 lg:left-10 lg:top-36">
+            <div class="absolute top-0 left-2/4 w-2 h-4/5 -ml-0 bg-primary-cyan md:h-2 md:w-4/5 md:left-10 md:top-36">
+            </div>
+            <div class="hidden md:block lg:hidden absolute top-0 left-16 -ml-0 bg-primary-cyan h-96 w-2 ">
             </div>
 
             <!-- single feature -->
@@ -143,14 +153,14 @@
       <!-- Boost Links -->
       <section id="boost-links" class="flex flex-col justify-center items-center px-6 h-72 lg:h-52">
         <h4 class="text-white mb-2 text-2xl lg:text-3xl">Boost your links today</h4>
-        <button type="button" class="btn lg:w-40 lg:mt-4 hover:bg-neutral-lightCyan">Get Started</button>
+        <button type="button" class="btn md:w-40 lg:mt-4 hover:bg-neutral-lightCyan">Get Started</button>
       </section>
     </main>
 
     <footer class="bg-neutral-darkViolet">
       <div
-        class="flex flex-col justify-center items-center p-10  text-neutral-grayishViolet max-w-5xl mx-auto lg:flex-row lg:justify-between lg:items-start lg:px-14">
-        <h1 class="py-4 lg:p-0 lg:w-1/4 xl:w-2/5">
+        class="grid grid-cols-1 place-items-center p-10 text-neutral-grayishViolet max-w-5xl mx-auto sm:grid-cols-6 sm:place-items-stretch lg:gap-x-2 lg:p-14">
+        <h1 class="py-4 sm:p-0 lg:w-1/4 xl:w-2/5 md:col-span-1 md:self-start">
           <a href="#" class="w-max">
             <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
               <path fill="var(--color-gray)"
@@ -158,7 +168,7 @@
             </svg>
           </a>
         </h1>
-        <nav id="footer-nav" class="my-6 text-center lg:flex lg:justify-between lg:m-0 lg:w-1/2 lg:text-left xl:w-2/5">
+        <nav id="footer-nav" class="my-6 text-center sm:col-span-4 sm:col-start-3 sm:flex sm:justify-around sm:text-left sm:my-0 lg:col-start-3 lg:col-span-3 lg:justify-between">
           <!-- nav section -->
           <div class="mb-8 lg:flex-1">
             <h5 class="mb-5 text-white">Features</h5>

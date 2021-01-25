@@ -1,6 +1,6 @@
 module.exports = {
   purge: {
-    content: ['./public/**/*.html'],
+    content: ['./public/**/*.html', './src/**/*.js'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        body: ['Poppins']
+        'poppins': ['Poppins', 'Roboto', 'sans-serif']
       },
       spacing : {
         18: '4.5rem',
