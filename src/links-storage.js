@@ -1,11 +1,12 @@
-import { ui } from './ui.js';
+import {
+    ui
+} from './ui.js';
 
-class Storage {
+class LinksStorage {
     constructor() {}
-
     getLinks() {
         let urlStore;
-        if(localStorage.getItem('urlStore') === null) {
+        if (localStorage.getItem('urlStore') === null) {
             urlStore = [];
         } else {
             urlStore = JSON.parse(localStorage.getItem('urlStore'));
@@ -34,4 +35,4 @@ class Storage {
     }
 }
 
-export const store = new Storage()
+export const linksStorage = new LinksStorage()
