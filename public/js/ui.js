@@ -9,12 +9,12 @@ class UI {
         let output = '';
 
         output = `
-        <div id="link-content" class="bg-white rounded-md mb-6 md:flex md:justify-between md:items-center md:flex-wrap md:px-4 md:py-2 lg:px-6 lg:py-3">
-        <div class="border-b border-neutral-gray px-4 py-2 md:border-0 md:p-0 lg:w-3/5">
-          <p id="full-url" class="text-neutral-darkViolet truncate">${url.fullUrl}</p>
+        <div class="link-content">
+        <div>
+          <p class="full-url">${url.fullUrl}</p>
         </div>
         <div class="shortened-wrapper">
-          <p id="short-url" class="text-primary-cyan">${url.shortUrl}</p>
+          <p class="short-url">${url.shortUrl}</p>
           <button type="button" class="btn copy-link">Copy</button>
         </div>
       </div>`;
@@ -52,7 +52,7 @@ class UI {
     }
 
     showClearButton() {
-        const links = document.querySelectorAll('#link-content');
+        const links = document.querySelectorAll('.link-content');
         const clearLinksBtn = document.querySelector('#links-container > div:first-of-type');
 
         if(links.length > 0) {
@@ -63,7 +63,7 @@ class UI {
     }
 
     clearLinks() {
-        const links = document.querySelectorAll('#link-content');
+        const links = document.querySelectorAll('.link-content');
 
         links.forEach(item => {
             item.remove()
