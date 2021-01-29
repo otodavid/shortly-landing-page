@@ -41,7 +41,7 @@
     }
 
     .btn {
-        @apply block w-max mx-auto bg-primary-cyan py-3 px-9 rounded-full text-white mt-2 text-base text-center hover:bg-neutral-lightCyan lg:text-sm;
+        @apply block w-max mx-auto bg-primary-cyan py-3 px-8 rounded-full text-white mt-2 text-base text-center hover:bg-neutral-lightCyan lg:text-sm;
     }
     
     .shortened-wrapper {

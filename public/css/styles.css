@@ -595,8 +595,8 @@ button {
   margin-top:0.5rem;
   padding-top:0.75rem;
   padding-bottom:0.75rem;
-  padding-left:2.25rem;
-  padding-right:2.25rem;
+  padding-left:2rem;
+  padding-right:2rem;
   text-align:center;
   --tw-text-opacity:1;
   color:rgba(255, 255, 255, var(--tw-text-opacity));
@@ -771,6 +771,10 @@ button {
   }
 }
 
+.bg-transparent{
+  background-color:transparent;
+}
+
 .bg-gray-200{
   --tw-bg-opacity:1;
   background-color:rgba(229, 231, 235, var(--tw-bg-opacity));
@@ -799,6 +803,11 @@ button {
 .hover\:bg-red-600:hover{
   --tw-bg-opacity:1;
   background-color:rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-cyan:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(42, 207, 207, var(--tw-bg-opacity));
 }
 
 .border-white{
@@ -1156,6 +1165,11 @@ button {
   color:rgba(35, 33, 39, var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity:1;
+  color:rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 .italic{
   font-style:italic;
 }
@@ -1481,6 +1495,11 @@ button {
     padding:0.875rem;
   }
 
+  .lg\:px-4{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+
   .lg\:pb-0{
     padding-bottom:0px;
   }
@@ -1510,8 +1529,8 @@ button {
     color:rgba(35, 33, 39, var(--tw-text-opacity));
   }
 
-  .lg\:w-32{
-    width:8rem;
+  .lg\:w-28{
+    width:7rem;
   }
 
   .lg\:w-40{
@@ -1520,6 +1539,10 @@ button {
 
   .lg\:w-52{
     width:13rem;
+  }
+
+  .lg\:w-56{
+    width:14rem;
   }
 
   .lg\:w-98{
@@ -1548,6 +1571,12 @@ button {
 
   .lg\:w-full{
     width:100%;
+  }
+
+  .lg\:w-max{
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
   }
 
   .lg\:gap-0{
