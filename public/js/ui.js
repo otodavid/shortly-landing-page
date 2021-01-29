@@ -15,7 +15,7 @@ class UI {
         </div>
         <div class="shortened-wrapper">
           <p id="short-url" class="text-primary-cyan">${url.shortUrl}</p>
-          <button type="button" class="copy-link">Copy</button>
+          <button type="button" class="btn copy-link">Copy</button>
         </div>
       </div>`;
 
