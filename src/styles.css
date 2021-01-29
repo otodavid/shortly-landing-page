@@ -27,7 +27,7 @@
     }
 
     button {
-        @apply text-base lg:text-sm;
+        @apply text-base font-bold;
     }
 }
 
