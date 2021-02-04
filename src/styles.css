@@ -138,3 +138,9 @@
 }
 
 @tailwind utilities;
+
+@layer utilities {
+    .smooth-scroll {
+        scroll-behavior: smooth;
+    }
+}

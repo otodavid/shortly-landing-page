@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="text-lg">
+<html lang="en" class="text-lg smooth-scroll">
 
 <head>
   <meta charset="UTF-8">
@@ -59,7 +59,7 @@
             Build your brand’s recognition and get detailed insights
             on how your links are performing.
           </p>
-          <a href="index.html" class="btn lg:w-40 md:m-0">Get Started</a>
+          <a href="#form-control" class="btn lg:w-40 md:m-0">Get Started</a>
         </div>
         <div id="hero-image" class="w-full pl-10 md:order-2 md:w-2/4 md:pl-0">
           <img src="./images/illustration-working.svg" class="w-96 max-w-none lg:w-full" alt="illustration working">
@@ -69,7 +69,8 @@
       <!-- shorten url and features section -->
       <section class="bg-gray-200 relative pt-24 mt-32 xl:mt-28">
         <!-- shorten url section -->
-        <div id="form-control">
+        <form action="GET">
+          <div id="form-control">
           <input type="text" id="shorten-link"
             class="w-full rounded-md p-2.5 px-4 text-sm lg:w-3/4 lg:p-3.5 border-white border-4"
             placeholder="Shorten a link here..." aria-label="url input">
@@ -78,6 +79,7 @@
             class="btn w-full rounded-md p-2.5 mt-3 lg:w-1/5 lg:m-0 lg:p-3.5">Shorten
             It!</button>
         </div>
+        </form>
 
         <div id="links-container"
           class="flex flex-col px-6 py-4 pt-2 mt-4 mb-5 max-h-98 overflow-y-auto max-w-md md:max-w-3xl md:px-14 lg:max-h-60 lg:max-w-5xl mx-auto xl:px-7">

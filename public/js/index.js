@@ -3,7 +3,7 @@ import { ui } from './ui.js';
 import { linksStorage } from './links-storage.js'
 
 const hamburgerBtn = document.querySelector('.mobile-nav');
-const shortenItBtn = document.querySelector('#form-control button');
+const form = document.querySelector('form');
 const urlInput = document.querySelector('#form-control input');
 const linksContainer = document.getElementById('links-container');
 
@@ -23,7 +23,8 @@ hamburgerBtn.addEventListener('click', () => {
     }
 })
 
-shortenItBtn.addEventListener('click', () => {
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
     // remove any alert message if any exists
     const alert = document.querySelector('.alert');
     if(alert.classList.contains('error')) {
